@@ -1,0 +1,23 @@
+header {
+  height: 400px;
+  width: 100%;
+  padding-top: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #853939;
+  color: aliceblue;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.avatar {
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+

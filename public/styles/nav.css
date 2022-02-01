@@ -6,7 +6,7 @@ nav {
   background-color: #4056A1;
   color: #FFFFFF;
   padding: 1.5em;
-  flex-direction: column;
+  justify-content: space-between;
 }
 nav span {
   font-family: 'Bungee', sans-serif;
@@ -14,10 +14,14 @@ nav span {
   display: flex;
   justify-content: flex-start;
 }
-
-nav i {
+.fa-solid .fa-angles-down {
   display: flex;
   align-self: flex-end;
+}
+nav .container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
 }
 
 #write-new {
