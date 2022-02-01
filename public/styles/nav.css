@@ -15,9 +15,9 @@ nav span {
   justify-content: flex-start;
 }
 
-nav.container {
+nav.contain {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
 

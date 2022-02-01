@@ -1,0 +1,19 @@
+section {
+  width: 100%;
+}
+#tweet-text {
+  width: 100%;
+  background-color: #f4f1ec;
+  border-bottom: 3px solid black;
+}
+
+#tweetButton {
+  font-family: 'Bungee', sans-serif;
+  color: #FFFFFF;
+  background-color: #4056A1;
+}
+
+.counter {
+  float: right;
+  font-family: 'Bungee', sans-serif;
+}
