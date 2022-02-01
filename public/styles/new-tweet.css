@@ -17,3 +17,7 @@ section {
   float: right;
   font-family: 'Bungee', sans-serif;
 }
+
+.counterOver {
+  color: #FF0000;
+}
