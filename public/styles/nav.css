@@ -14,14 +14,11 @@ nav span {
   display: flex;
   justify-content: flex-start;
 }
-.fa-solid .fa-angles-down {
-  display: flex;
-  align-self: flex-end;
-}
-nav .container {
+
+nav.container {
   display: flex;
   justify-content: space-around;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 #write-new {

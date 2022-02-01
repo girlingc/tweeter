@@ -19,5 +19,7 @@ header {
   align-items: flex-start;
 }
 
-
+img {
+  width: 200px;
+}
 

@@ -24,6 +24,15 @@ body {
   flex-direction: column;
 }
 
+main {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-self: center;
+  background-color: #f4f1ec;
+  color: #545149;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
