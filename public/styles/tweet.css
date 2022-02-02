@@ -1,5 +1,6 @@
 .tweet {
   margin-bottom: 2.5rem;
+  width: 100%;
   padding: 1.25rem;
   border-color: #545149;
   border-style: solid;
@@ -25,11 +26,11 @@
   padding-left: .5rem;
 }
 
-.tweet header .username {
+.tweet header .handle {
   display: flex;
   align-items: center;
   color: #5451497c;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 95%;
 }
 
