@@ -18,34 +18,33 @@ $(document).ready( () => {
   }
 
   const createTweetElement = function(tweet) {
-    const $article = $('<article>').addClass('tweet');
-    const $header = $(`         
-      <header>
-        <div class="avatar-name">
-          <img src=${tweet.user.avatars}>
-          <span class="name">${tweet.user.name}</span>
-        </div>
-        <div class="handle">
-          <span>${tweet.user.handle}</span>
-        </div>
-      </header>`);
-    const $content = $('<div>').addClass('text').text(`${tweet.content.text}`);
-    const $footer = $(`         
-      <footer>
-        <span class="date">${timeago.format(tweet.created_at)}</span>
-        <div>
-          <i class="fa-solid fa-flag"></i>
-          <i class="fa-solid fa-retweet"></i>
-          <i class="fa-solid fa-heart"></i>
-        </div>
-      </footer>`)
-
-      $article.append($header, $content, $footer)
+    const $article = $(`
+      <article class="tweet"> 
+        <header>
+          <div class="avatar-name">
+            <img src=${tweet.user.avatars}>
+            <span class="name">${tweet.user.name}</span>
+          </div>
+          <div class="handle">
+            <span>${tweet.user.handle}</span>
+          </div>
+        </header>
+        <div class="text">${tweet.content.text}</div>
+        <footer>
+          <span class="date">${timeago.format(tweet.created_at)}</span>
+          <div>
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+    `)
     return $article
   };
   const $tweetContainer = $('#tweet-container')
 
-  const fetchTweets = () => {
+  const renderTweets = () => {
     $.ajax({
       url: '/tweets',
       method:'GET'
@@ -61,5 +60,5 @@ $(document).ready( () => {
     });
   };
   
-  fetchTweets();
+  renderTweets();
 });
