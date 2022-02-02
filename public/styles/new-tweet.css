@@ -4,7 +4,9 @@ section {
 #tweet-text {
   width: 100%;
   background-color: #f4f1ec;
-  border-bottom: 3px solid black;
+  border: none;
+  border-bottom: 3px solid #545149;
+  
 }
 
 #tweetButton {
