@@ -4,7 +4,7 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-$(document).ready( () => {
+$(document).ready(() => {
 
   const escape = str => {
     let div = document.createElement('div');
@@ -34,10 +34,10 @@ $(document).ready( () => {
           </div>
         </footer>
       </article>
-    `)
-    return $article
+    `);
+    return $article;
   };
-  const $tweetContainer = $('#tweet-container')
+  const $tweetContainer = $('#tweet-container');
 
   const renderTweets = () => {
     $.ajax({
@@ -51,15 +51,14 @@ $(document).ready( () => {
 
       for (const tweetKey in tweets) {
         const $tweet = createTweetElement(tweets[tweetKey]);
-        $tweetContainer.append($tweet)
+        $tweetContainer.append($tweet);
       }
     });
   };
   
   renderTweets();
 
-  $('#new-tweet-form').on('submit', function (e) {
-
+  $('#new-tweet-form').on('submit', function(e) {
     e.preventDefault();
     const data = $(this).serialize();
 
@@ -69,10 +68,10 @@ $(document).ready( () => {
       data: data
     }).then(() => {
       console.log('tweet created successfully');
-
-        renderTweets();
+      renderTweets();
     });
-    $('#new-tweet-form').each(function(){
+
+    $('#new-tweet-form').each(function() {
       this.reset();
     });
   });

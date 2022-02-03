@@ -12,7 +12,7 @@
   
 }
 
-#tweetButton {
+#tweet-button {
   font-family: 'Bungee', sans-serif;
   color: #FFFFFF;
   background-color: #4056A1;
@@ -25,4 +25,8 @@
 
 .counterOver {
   color: #FF0000;
+}
+
+#tweet-button.disabled {
+  background-color: #8a91b6;
 }
