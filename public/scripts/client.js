@@ -6,7 +6,7 @@
 
 $(document).ready(() => {
 
-  // Method to steralize user input
+  // Method to sanitize user input
   const escape = str => {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
