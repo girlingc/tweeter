@@ -26,18 +26,27 @@
 }
 
 .fa-angles-down {
-  padding-top: .75em;
   color: #FF0000;
+  
 }
 
 .to-top {
   border: none;
   background-color: #4056A1;
-  color: #FFFFFF;
+  color: #FF0000;
+  padding: 15px 70px;
 }
 
 button.nav-write {
   border: #0e193b;
   background-color: #4056A1;
+  color: #FFFFFF;
+}
+
+button.nav-write:hover {
+  color: #FF0000;
+}
+
+button.to-top:hover {
   color: #FFFFFF;
 }

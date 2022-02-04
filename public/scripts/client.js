@@ -6,12 +6,16 @@
 
 $(document).ready(() => {
 
+
+  // Method to steralize user input
   const escape = str => {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
 
+
+  // Creates the HTML of an entire tweet
   const createTweetElement = (tweet) => {
     const $article = $(`
       <article class="tweet"> 
@@ -37,6 +41,8 @@ $(document).ready(() => {
     `);
     return $article;
   };
+
+  // Renders all tweets in /tweets to screen
   const $tweetContainer = $('#tweet-container');
 
   const renderTweets = () => {
@@ -58,14 +64,7 @@ $(document).ready(() => {
   
   renderTweets();
 
-  $(window).scroll(function() {
-    if ($(this).scrollTop()) {
-        $('#to-top').fadeIn();
-    } else {
-        $('#to-top').fadeOut();
-    }
-});
-
+  // Takes created tweet and adds it to /tweets, then reloads the page
   $('#new-tweet-form').on('submit', function(e) {
     e.preventDefault();
     const data = $(this).serialize();
@@ -75,7 +74,6 @@ $(document).ready(() => {
       url: '/tweets',
       data: data
     }).then(() => {
-      console.log('tweet created successfully');
       renderTweets();
     });
 

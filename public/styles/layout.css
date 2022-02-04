@@ -36,10 +36,6 @@ main {
   flex-direction: column;
 }
 
-#to-top {
-  display: flex;
-  float: left;
-}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

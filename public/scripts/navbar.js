@@ -11,8 +11,7 @@ $(document).ready( () => {
     $(window).scrollTop(0);
   });
 
-
-  let scrollValue = 0;
+  let scrollValue = 200;
 
   $(window).on('scroll', e => {
     const st = $(window).scrollTop();

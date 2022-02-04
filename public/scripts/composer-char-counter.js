@@ -17,5 +17,6 @@ $(document).ready(function() {
       $('#tweet-button').prop('disabled', false).removeClass('disabled');
     }
     charCounter.text(140 - tweetLength);
+    
   });
 });
