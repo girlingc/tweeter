@@ -5,7 +5,7 @@
  */
 
 $(document).ready(() => {
-  
+
   // Method to steralize user input
   const escape = str => {
     let div = document.createElement('div');
@@ -73,6 +73,7 @@ $(document).ready(() => {
       data: data
     }).then(() => {
       renderTweets();
+      $(this).find("#counter").text('140');
     });
 
     $('#new-tweet-form').each(function() {

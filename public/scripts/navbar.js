@@ -6,27 +6,29 @@ $(document).ready( () => {
 
   // Animation to toggle 'compose tweet'
   $('.navbar button.nav-write').on('click', e => {
+    $('html, body').animate(
+      { scrollTop: 0 }, 
+    );
     $('.new-tweet').slideToggle();
     document.getElementById('tweet-text').focus();
   });
 
-  let scrollValue = 200;
+  let scrollValue = 20;
 
-  // Shows scroll up when scrolling down, 'compose tweet' when scrolling up
+  // Shows button when not at top of the page
   $(window).on('scroll', e => {
-    const st = $(window).scrollTop();
-    if (st > scrollValue) {
+    const bodyValue = document.body.scrollTop;
+    const eleValue = document.documentElement.scrollTop
+    if (bodyValue > scrollValue || eleValue > scrollValue) {
       $('.navbar button.to-top').show();
-      $('.navbar button.nav-write').hide();
     } 
     else {
       $('.navbar button.to-top').hide();
       $('.navbar button.nav-write').show();
     }
-    scrollValue = st;
   })
 
-  // Scroll up to top of page, show 'compose tweet'
+  // Scroll up to top of page
   $('.navbar button.to-top').on('click', () => {
     $('html, body').animate(
       { scrollTop: 0 }, 
