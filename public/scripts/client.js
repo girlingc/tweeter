@@ -5,15 +5,13 @@
  */
 
 $(document).ready(() => {
-
-
+  
   // Method to steralize user input
   const escape = str => {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-
 
   // Creates the HTML of an entire tweet
   const createTweetElement = (tweet) => {

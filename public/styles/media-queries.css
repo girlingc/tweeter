@@ -1,5 +1,6 @@
 /* Media Queries */
 
+/* Configuration for small mobile devices */
 @media (max-width: 767px) {
   .container {
     padding-right: 20px;
@@ -7,6 +8,7 @@
   }
 }
 
+/* Configuration for tablet devices */ 
 @media (min-width: 768px) {
   .container {
     padding-right: 20px;
@@ -14,6 +16,7 @@
   }
 }
 
+/* Configuration for laptops/PC */
 @media (min-width: 1024px) {
   .main-body {
     display: flex;

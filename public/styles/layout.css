@@ -25,15 +25,21 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 100%;
   background-color: #f4f1ec;
 
+}
+
+.main-body {
+  width: 100%;
 }
 
 .container {
   display: flex;
   align-items: baseline;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*

@@ -1,11 +1,12 @@
 .profile-header {
   height: 400px;
-  width: 100%;
-  padding-top: 230px;
+  width: 113%;
+  padding-top: 228px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  padding-right: 2em;
   background-color: #853939;
   color: aliceblue;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");

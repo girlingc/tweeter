@@ -4,12 +4,12 @@
   flex-direction: column;
   padding-bottom: 2em;
 }
+
 #tweet-text {
   width: 100%;
   background-color: #f4f1ec;
   border: none;
   border-bottom: 3px solid #545149;
-  
 }
 
 #tweet-button {
@@ -18,12 +18,12 @@
   background-color: #4056A1;
 }
 
-.counter {
+#counter {
   float: right;
   font-family: 'Bungee', sans-serif;
 }
 
-.counterOver {
+.counter-over {
   color: #FF0000;
 }
 
