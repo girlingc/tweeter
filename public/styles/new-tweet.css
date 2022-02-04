@@ -30,3 +30,9 @@
 #tweet-button.disabled {
   background-color: #8a91b6;
 }
+
+.err-msg {
+  background-color: #ff00002c;
+  color: #FF0000;
+  padding: 0px 5px;
+}
