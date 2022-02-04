@@ -1,0 +1,33 @@
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .main {
+    padding-left: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .something {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+  }
+
+  .profile-header {
+    width: 30vw;
+    padding: 151px ;
+    height: 100%;
+  }
+
+  .container {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 70vw;
+  }
+}

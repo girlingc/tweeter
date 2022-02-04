@@ -9,7 +9,7 @@ $(document).ready(function() {
       charCounter.addClass('counterOver');
       $('#tweet-button').prop('disabled', true).addClass('disabled');
     } 
-    else if (tweetLength === 0) {
+    else if (tweetLength === 0 || this.value.trim().length === 0) {
       $('#tweet-button').prop('disabled', true).addClass('disabled');
     } 
     else {
