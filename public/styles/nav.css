@@ -29,3 +29,15 @@
   padding-top: .75em;
   color: #FF0000;
 }
+
+.to-top {
+  border: none;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+
+button.nav-write {
+  border: #0e193b;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}

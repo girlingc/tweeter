@@ -58,6 +58,14 @@ $(document).ready(() => {
   
   renderTweets();
 
+  $(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#to-top').fadeIn();
+    } else {
+        $('#to-top').fadeOut();
+    }
+});
+
   $('#new-tweet-form').on('submit', function(e) {
     e.preventDefault();
     const data = $(this).serialize();
